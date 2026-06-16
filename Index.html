@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>오버워치 영웅 선택 화면</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src = "./JS/lib.js">
+    </script>
+</head>
+<body>
+    <div class="main-bg">
+        <section class="hero-section">
+            <div class="hero-container">
+
+                <script>
+                    for (let i = 1; i <= 32; i++) {
+
+                        document.write(`
+                            <div class="hero-wrapper">
+                                <div class="hero-card">
+                                    <img src="./image/hero${i}.png" alt="Hero">
+                            </div>
+                            <div class="hero-desc">
+                                Overwatch${i}
+                            </div>
+                        </div>
+                        `);
+
+                    }
+                </script>
+            </div>
+        </section>
+
+        <div class="notice-section">공지사항</div>
+
+        <div class="logo-section">
+            <img src="./image/logo_overwatch.png" alt="Overwatch Logo" class="main-logo">
+        </div>
+    </div>
+</body>
+</html>
